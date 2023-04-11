@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"name": "css",
+		"path": "../goit-home-work-4/images/css"
+	},
+	{
+		"name": "goit-home-work-5",
+		"path": "."
+	},
+	{
+		"path": "../goit-home-work-4/images"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "goit-home-work-5",
+    "liveServer.settings.port": 5501
+  }
+}
