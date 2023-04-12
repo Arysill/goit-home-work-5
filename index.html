@@ -27,13 +27,13 @@
             >Web<span class="headerw-logo">Studio</span></a
           >
           <ul class="headerw-list list">
-            <li class="headerw-link link">
+            <li class="headerw-link link  ">
               <a href="./index.html" class="headerw-text link">Studio</a>
             </li>
-            <li class="headerw-link link">
-              <a href="./portfolio.html" class="headerw-text link">Portfolio</a>
+            <li class="headerw-link link ">
+              <a href="./portfolio.html" class="header-text link active">Portfolio</a>
             </li>
-            <li class="headerw-link link">
+            <li class="headerw-link link ">
               <a href="" class="headerw-text link">Contacts</a>
             </li>
           </ul>
@@ -65,7 +65,7 @@
           <h1 class="text-hero-web">
             Effective Solutions<br />for Your Business
           </h1>
-          <button type="button" class="btn-hero-web">Order Service</button>
+          <button type="button" class="btn-hero-web" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -387,6 +387,12 @@
 
     </main>
     <footer class="footer list">
+       <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+          <button type="button" class="modal-close" data-modal-close><svg><use href="./images/close-black-18dp (2) 1 (1) (1).svg">
+          </use></svg></button>
+        </div>
+      </div>
       <div class="  container-fotter">
         <div class="logo-parag">
            <a class="footer-logo-web link" href="portfolio.html"
@@ -431,5 +437,6 @@
       </div>
  
     </footer>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
