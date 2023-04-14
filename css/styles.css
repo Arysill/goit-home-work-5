@@ -648,8 +648,9 @@ body {
 .custor {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11px;
+  line-height: 40px;
   text-align: center;
+  text-transform: capitalize;
   letter-spacing: 0.02em;
   padding-top: 120px;
   padding-bottom: 72px;
