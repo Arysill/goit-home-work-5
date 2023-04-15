@@ -224,7 +224,10 @@ address {
   flex-grow: 0;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  transition: transform var(--tra), border-radius var(--tra);
+  /* transition: transform var(--tra), border-radius var(--tra); */
+  transition-timing-function: linear, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: transform, border-radius;
 }
 .button {
 }
@@ -676,7 +679,7 @@ body {
   justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  /* transition: transform var(--tra), border-radius var(--tra); */
+  transition: transform var(--tra), border-radius var(--tra);
 }
 
 .custo-icon {
@@ -711,7 +714,7 @@ body {
   justify-content: center;
   background: #4d5ae5;
   border-radius: 50%;
-  /* transition: transform var(--tra), border-radius var(--tra); */
+  transition: transform var(--tra), border-radius var(--tra);
 }
 .our-soc-link:is(:hover, :focus) {
   background: #404bbf;
@@ -845,8 +848,20 @@ body {
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  color: #2e2f42;
   width: 24px;
   height: 24px;
+}
+.modal-close:is(:hover, :focus) {
+  background-color: #404bbf;
+}
+
+.icon-close {
+  fill: #2e2f42;
+}
+
+.modal-close:is(:hover, :focus) .icon-close {
+  fill: #ffffff;
 }
 .is-hidden {
   opacity: 0;
